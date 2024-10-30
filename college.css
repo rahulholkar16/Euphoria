@@ -7,6 +7,8 @@
     font-family: Poppins,Arial, Helvetica, sans-serif;
 }
 
+/* Nav section */
+
 .navbar{
     height: 60px;
     background-color: #023e8a;
@@ -16,11 +18,33 @@
     justify-content: space-evenly;
 }
 
-.sub-navbar ul li{
+/* .sub-navbar ul li{
     list-style: none;
     text-decoration: none;
     display: inline;
     margin-left: 14px;
+} */
+
+.sub-navbar{
+    display: flex;
+    gap: 4rem;
+}
+
+.sub-navbar i:hover{
+    cursor: pointer;
+}
+
+.return-order p{
+    font-size: 13px;
+}
+
+.return-order:hover{
+    cursor: pointer;
+}
+
+.order{
+    font-weight: 600;
+    margin-top: -9px;
 }
 
 a{
@@ -44,7 +68,7 @@ a{
 
 .search-select {
     background-color: #f3f3f3;
-    width: 50px;
+    width: 70px;
     text-align: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -73,11 +97,160 @@ a{
     border: 2px solid #03045e;
 }
 
-.logo {
-    background-image: url(image/logo-transparent.png);
-    background-size: cover;
-    height: 50px;
+.my-cart{
+    width: 50px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.my-cart a{
+    font-size: 1rem;
+    margin-left: 6px;   
+}
+
+.my-profile{
+    width: 50px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.my-profile a{
+    font-size: 1rem;
+    margin-left: 6px;
+}
+
+/* Container-section */
+
+.container{
+    height: 100%;
     width: 100%;
+    margin-top: 10px;
+    background-color: #dfe6e9;
+}
+
+.college-card{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    color: #111;
+}
+
+.read-more-btn{
+    color: #0984e3;
+    display:flex;
+    flex-direction:row-reverse;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.read-more-text{
+    display: none;
+}
+
+.read-more-text--show{
+    display: inline;
+}
+
+.college-img1{
+    background-image: url(/Euphoria/image/AIMT_Noida_2.jpg);
+    background-size: cover;
+    border-radius: 16%;
+    margin: 0 55px;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.detail{
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    margin-right:55px;
+    padding: 1%;
+}
+
+#clgName{
+    color: #5a5695;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 0;
+}
+
+#headingH2{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.clg-listing-verified{
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-direction:row-reverse;
+}
+
+.about-clg{
+    line-height: 20px;
+    margin-top: 4px;
+}
+
+.about-clg p{
+    margin-top: 0.4rem;
+}
+
+.star_left {
+    position: relative;
+}
+
+.star-rating{
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.star-rating i{
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    transition: transform .2s ease-in-out;
+    margin-right: -5px;
+    color: #f77f00;
+}
+
+#normal{
+    color: black;
+}
+
+.gray_box{
+    margin-top: -6px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user-verify{
+    color: #f77f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-verify i{
+    font-size: 12px;
+}
+
+.user-verify p{
+    font-size: 11px;
 }
 
 /* Footer Section */
@@ -109,10 +282,10 @@ footer{
 }
 
 .logo {
-    background-image: url(/Euphoria/image/logo-transparent.png);
+    background-image: url(/Euphoria/image/Name-logo.png);
     background-size: cover;
-    height: 50px;
-    width: 100px;
+    height: 54px;
+    width: 135px;
 }
 
 .logo:hover {

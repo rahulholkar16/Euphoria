@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="navbar">
@@ -18,32 +20,89 @@
             </div>
 
             <div class="nav-search">
-                <select class="search-select">
-                    <option value="">All</option>
+                <select class="search-select search-input">
+                    <option value="">Select Course</option>
+                    <option value="BA">B.A.(Bachelor of Art)</option>
+                    <option value="Bcom">B.Com (Bachelor of Commerce)</option>
+                    <option value="Bpharma">B.Pharma</option>
+                    <option value="Dpharma">D.Pharma</option>
+                    <option value="btech">B-Tech</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="bca">BCA (Bachelor of Computer Applications)</option>
+                    <option value="mba">MBA (Master of Business Administration)</option>
+                    <option value="barch">B.Arch</option>
+                    <option value="Mtech">M-Tech</option>
+                    <option value="Mca">MCA (Master of Computer Applications)</option>
+                    <option value="ba-llb">B.A-LLB</option>
                 </select>
-                <input placeholder=" Search Euphoria" class="search-input">
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
 
             <div class="sub-navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li>Categories</li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
+                <div class="return-order">
+                    <p>Returns</p>
+                    <div class="order">& Orders</div>
+                </div>
+                <div class="my-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="cart" href="#">Cart</a>
+                </div>
+                <div class="my-profile">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <a class="login" href="#">Login</a>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- container section-->
-     <div class="container">
+    <div class="container">
+        <div class="college-card">
+            <div class="college-img1"></div>
+            <div class="detail">
+                <p id="clgName">Inderprastha Engineering College, Ghaziabad</p>
+                <h2 id="headingH2">Bright Future with job ready skills</h2>
+                <div class="clg-listing-verified">
+                    <div class="star_left">
+                        <div class="gray_box">
+                            <div class="star-rating" title="4.2 star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star" id="normal"></i>
+                            </div>
+                            <div class="user-verify">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p>Verified User</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-clg">
+                        <h4>About IPEC Ghaziabad... </h4>
+                        <p>Inderprastha Engineering College Ghaziabad is an affiliated college established in 2000. IPEC
+                            Ghaziabad offers UG and PG courses to students in the disciplines of engineering. B.Tech and
+                            M.E./M.Tech courses are offered to students at IPEC. Admissions at IPEC Ghaziabad are on the
+                            basis of merit in entrance exams. Prospective students must appear for entrance exams such
+                            as, JEE Main , UPCET and GATE as per the eligibility requirements.</p>
+                            <p>IPEC Ghaziabad is affiliated to Dr APJ Abdul Kalam Technical University, Lucknow. They offer scholarships to students as a reward for their academic excellence. 
+                        <div class="read-more-text">
+                            The institute has implemented a policy to reward university toppers, providing full exemption fromtuition fees to students ranking in the top 10 positions at the university level. </p>
+                            <p>Training and Placement at IPEC Ghaziabad is responsible for bringing top-tier companies to the campus. Some of the leading companies include Airtel, TCS, Wipro, and others. Amenities such as a library, cafeteria, medical facilities, auditorium, laboratories, comfortable accommodation and many others for a comfortable learning experience.</p>
+                        </div>
+                    </div>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+            </div>
+        </div>
+        <div class="college-card"></div>
+        <div class="college-card"></div>
+        <div class="college-card"></div>
+    </div>
 
-     </div>
-
-     <!-- footer-section -->
+    <!-- footer-section -->
     <footer>
         <div class="foot-panel1">
 
@@ -78,5 +137,7 @@
             </div>
         </div>
     </footer>
+    <script src="college.js"></script>
 </body>
+
 </html>
