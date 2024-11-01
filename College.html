@@ -6,53 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euphoria - College-List</title>
     <link rel="stylesheet" href="college.css">
-    <link rel="shortcut icon" href="/Euphoria/image/logo-transparent.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/image/logo-transparent.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
 <body>
+    <div class="top-header">
+        <div class="social-media">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook" id="facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-x-twitter" id="twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" id="instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin" id="linkdin"></i></a></li>
+            </ul>
+        </div>
+        <div class="digital-clock">
+            <div class="time">
+                <span class="hours">00</span>
+                <span class="dots">:</span>
+                <span class="minutes">00</span>
+                <span class="dots">:</span>
+                <div class="right-side">
+                    <span class="seconds">00</span>
+                    <!-- <span class="period">AM/PM</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
-        <div class="navbar">
-            <div class="nav-logo">
-                <div class="logo"></div>
+        <img class="logo" src="/image/Name-logo.png" alt="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">College</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Carrier</a></li>
+                <li><a href="#">Latest Updates</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icon">
+            <div class="my-profile">
+                <a href="#"><i class="fa-solid fa-circle-user"></i><p id="icon-text">Profile</p></a>
             </div>
-
-            <div class="nav-search">
-                <select class="search-select search-input">
-                    <option value="">Select Course</option>
-                    <option value="BA">B.A.(Bachelor of Art)</option>
-                    <option value="Bcom">B.Com (Bachelor of Commerce)</option>
-                    <option value="Bpharma">B.Pharma</option>
-                    <option value="Dpharma">D.Pharma</option>
-                    <option value="btech">B-Tech</option>
-                    <option value="bsc">B.Sc</option>
-                    <option value="bca">BCA (Bachelor of Computer Applications)</option>
-                    <option value="mba">MBA (Master of Business Administration)</option>
-                    <option value="barch">B.Arch</option>
-                    <option value="Mtech">M-Tech</option>
-                    <option value="Mca">MCA (Master of Computer Applications)</option>
-                    <option value="ba-llb">B.A-LLB</option>
-                </select>
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-
-            <div class="sub-navbar">
-                <div class="return-order">
-                    <p>Returns</p>
-                    <div class="order">& Orders</div>
-                </div>
-                <div class="my-cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a class="cart" href="#">Cart</a>
-                </div>
-                <div class="my-profile">
-                    <i class="fa-regular fa-circle-user"></i>
-                    <a class="login" href="#">Login</a>
-                </div>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
     </header>
@@ -87,8 +88,8 @@
                             M.E./M.Tech courses are offered to students at IPEC. Admissions at IPEC Ghaziabad are on the
                             basis of merit in entrance exams. Prospective students must appear for entrance exams such
                             as, JEE Main , UPCET and GATE as per the eligibility requirements.</p>
-                            <p>IPEC Ghaziabad is affiliated to Dr APJ Abdul Kalam Technical University, Lucknow. They offer scholarships to students as a reward for their academic excellence. 
                         <div class="read-more-text">
+                            <p>IPEC Ghaziabad is affiliated to Dr APJ Abdul Kalam Technical University, Lucknow. They offer scholarships to students as a reward for their academic excellence. 
                             The institute has implemented a policy to reward university toppers, providing full exemption fromtuition fees to students ranking in the top 10 positions at the university level. </p>
                             <p>Training and Placement at IPEC Ghaziabad is responsible for bringing top-tier companies to the campus. Some of the leading companies include Airtel, TCS, Wipro, and others. Amenities such as a library, cafeteria, medical facilities, auditorium, laboratories, comfortable accommodation and many others for a comfortable learning experience.</p>
                         </div>
@@ -109,7 +110,7 @@
         </div>
 
         <div class="foot-panel2">
-            <div class="logo"></div>
+            <div class="logo-footer"></div>
             <div class="foot-other">
                 <div class="language border1 country">
                     <i class="fa-solid fa-globe"></i>
