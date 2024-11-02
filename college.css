@@ -224,9 +224,10 @@ a {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
     color: #111;
     padding: 10px 2%;
+    border-radius: .6rem;
 }
 
 .read-more-btn {
@@ -307,7 +308,9 @@ a {
 .section-title{
     width: 86%;
     height: 3rem;
-    background-color:#e9ecef;
+    background-color:#8338ec;
+    color: #fff;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
