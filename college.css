@@ -246,6 +246,67 @@ a {
     display: inline;
 }
 
+/* Category section */
+
+#arrow-left , #arrow-right{
+    font-size: 3rem;
+    position: relative;
+    top: 45%;
+    left: -14px;
+    cursor: pointer;
+    color: #6d6875;
+    height: 10px;
+}
+
+#arrow-left:hover , #arrow-right:hover{
+    color: #315cfd;
+    transition: all 0.3s ease 0s;
+}
+
+#arrow-right{
+    position: relative;
+    left: 14px;
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 14px;
+}
+
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked+.name {
+    background-color: #fff;
+    font-weight: 600;
+}
+
 /* ------Post Section------------- */
 
 .card {
@@ -305,10 +366,10 @@ a {
     opacity: 1;
 }
 
-.section-title{
+.section-title {
     width: 86%;
     height: 3rem;
-    background-color:#8338ec;
+    background-color: #8338ec;
     color: #fff;
     border-radius: 1rem;
     display: flex;
@@ -318,7 +379,7 @@ a {
     font-size: 1.6rem;
 }
 
-.post-card{
+.post-card {
     display: contents;
 }
 
@@ -476,7 +537,7 @@ input:hover {
 }
 
 .logo-footer {
-    background-image: url(/image/Name-logo.png);
+    background-image: url(/image/new_logo.png);
     background-size: cover;
     height: 54px;
     width: 135px;
