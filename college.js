@@ -3,15 +3,7 @@ const hour = document.querySelector(".hours");
 const minute = document.querySelector(".minutes");
 const second = document.querySelector(".seconds");
 const period = document.querySelector(".period");
-
-viewMore.addEventListener('click',event=>{
-    const current = event.target;
-    const isReadMoreBtn = current.className.includes('read-more-btn');
-    if(!isReadMoreBtn) return;
-    const currentText = event.target.parentNode.querySelector(".read-more-text");
-    currentText.classList.toggle('read-more-text--show');
-    current.textContent = current.textContent.includes("Read More") ? "Read Less..." : "Read More..."
-});
+const slides = document.querySelectorAll(".slide");
 
 
 // ---------------Clock-section----------------
@@ -43,7 +35,43 @@ function clock(){
     hour.innerHTML = hours;
     minute.innerHTML = minutes;
     second.innerHTML = seconds;
-    period.innerHTML = periods;
 }
 
 var updateClock = setInterval(clock, 1000);
+
+// ---------------------slider section---------------------------
+
+var counter = 0;
+slides.forEach(
+    (slide,index)=>{
+        slide.style.left = `${index * 100}%`
+    }
+)
+
+const goPrev = () => {
+    if (counter <= 0) {
+        slideImage();      
+    }
+    else{
+        counter--;
+        slideImage();      
+    }
+}
+
+const goNext = () => {
+    if (counter == 4) {
+        slideImage();      
+    }
+    else{
+        counter++;
+        slideImage();      
+    }
+}
+
+const slideImage = () =>{
+    slides.forEach(
+        (slide) => {
+            slide.style.transform = `translateX(-${counter * 100}%)`
+        }
+    )
+}
