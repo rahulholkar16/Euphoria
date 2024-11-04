@@ -4,6 +4,7 @@ const minute = document.querySelector(".minutes");
 const second = document.querySelector(".seconds");
 const period = document.querySelector(".period");
 const slides = document.querySelectorAll(".slide");
+const slider_box = document.querySelector(".college-card-silder");
 
 
 // ---------------Clock-section----------------
@@ -51,6 +52,7 @@ slides.forEach(
 const goPrev = () => {
     if (counter <= 0) {
         slideImage();      
+        counter = 5;
     }
     else{
         counter--;
@@ -60,7 +62,8 @@ const goPrev = () => {
 
 const goNext = () => {
     if (counter == 4) {
-        slideImage();      
+        slideImage(); 
+        counter = -1;     
     }
     else{
         counter++;
@@ -75,3 +78,24 @@ const slideImage = () =>{
         }
     )
 }
+
+//----for auto sliding------
+
+function autoSliding(){
+    deletInterval = setInterval(timer , 2000);
+    function timer(){
+        goNext();
+    }
+}
+
+autoSliding();
+
+//stop auto sliding when mouse is over
+
+slider_box.addEventListener('mouseover', function(){
+    clearInterval(deletInterval);
+});
+
+//resume sliding when mouse is out.
+
+slider_box.addEventListener('mouseout',autoSliding);
