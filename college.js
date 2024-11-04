@@ -1,10 +1,12 @@
-const viewMore = document.querySelector(".clg-listing-verified");
 const hour = document.querySelector(".hours");
 const minute = document.querySelector(".minutes");
 const second = document.querySelector(".seconds");
 const period = document.querySelector(".period");
 const slides = document.querySelectorAll(".slide");
 const slider_box = document.querySelector(".college-card-silder");
+const search_box = document.querySelector(".search-box");
+const box = document.querySelector(".active_box");
+const Closs = document.querySelector("#closs");
 
 
 // ---------------Clock-section----------------
@@ -99,3 +101,16 @@ slider_box.addEventListener('mouseover', function(){
 //resume sliding when mouse is out.
 
 slider_box.addEventListener('mouseout',autoSliding);
+
+
+// ------------Search-box----------------------------
+
+box.addEventListener('click',()=>{
+    search_box.style.visibility = 'visible';
+    search_box.style.transition = 'all 1s';
+});
+
+Closs.addEventListener('click',()=>{
+    search_box.style.visibility = 'hidden';
+    Closs.style.transition = 'ease-in-out 0.5s';
+});
