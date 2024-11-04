@@ -145,10 +145,11 @@ a {
 
 .logo {
     background-size: cover;
-    height: 54px;
-    width: 135px;
+    height: 45px;
+    width: 207px;
     margin-right: auto;
     margin-left: -3rem;
+    object-fit: contain;
 }
 
 .logo:hover {
@@ -666,10 +667,10 @@ input:hover {
 }
 
 .logo-footer {
-    background-image: url(/image/new_logo.png);
+    background-image: url(/image/name-logo1.png);
     background-size: cover;
     height: 54px;
-    width: 135px;
+    width: 200px;
 }
 
 .logo-footer:hover {
