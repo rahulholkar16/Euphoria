@@ -107,10 +107,10 @@ slider_box.addEventListener('mouseout',autoSliding);
 
 box.addEventListener('click',()=>{
     search_box.style.visibility = 'visible';
-    search_box.style.transition = 'all 1s';
+    search_box.style.transition = 'all 0.3s ease 0s';
 });
 
 Closs.addEventListener('click',()=>{
     search_box.style.visibility = 'hidden';
-    Closs.style.transition = 'ease-in-out 0.5s';
+    Closs.style.transition = 'all 0.3s ease 0.2s';
 });
