@@ -8,6 +8,12 @@
     list-style: none;
 }
 
+.main-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 /* -----------------Clock-Section---------------- */
 
 .digital-clock {
@@ -353,6 +359,7 @@ a {
     border-radius: 6px;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease 0s;
+    font-weight: 500;
 }
 
 .slider-text:hover {
@@ -370,10 +377,9 @@ a {
     margin-left: 35px;
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #a2d2ff;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
     color: #111;
-    /* padding: 10px 2%; */
     border-radius: .6rem;
     display: flex;
     justify-content: center;
@@ -438,12 +444,66 @@ a {
 }
 
 .featured-college{
-    background-color: #edede9;
-    width: 32em;
-    height: 100%;
+    border-radius: 0.8em;
+    background-color: #f5f3f4;
+    color: #000;
+    width: 30em;
+    height: 97%;
+    padding: 1.2em 1.2em;
+    margin-left: 0.6em;
+}
+
+.heading{
+    height: 3em;
+    width: 90%;
+    padding: 0.8em 1.5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.2em;
+}
+
+.college-names{
+    width: 100%;
+    height: 88.5%;
+    overflow: overlay;
+}
+
+.college-names a , .Exam-name a , .State-name a , .Course-name a{
+    color: #03045e;
+    font-size: 0.9em;
+}
+
+.college, .Exam-name , .State-name , .Course-name{
+    padding: 4px 15px;
+    background: #fbfbfc;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #c5c3e5;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #03045e;
+    margin-left: 1em;
+}
+
+.college:hover, .Exam-name:hover , .State-name:hover , .Course-name:hover{
+    background-color: #e9ecef;
+}
+
+.float{
+    float: right;
+    font-weight: 500;
+    text-align: left;
+    margin-right: 20px;
+}
+
+#heading-view{
+    color: #00a6fb;
+}
+
+#heading{
+    font-weight: 600;
 }
 
 .state-exams{
@@ -452,31 +512,50 @@ a {
 }
 
 .exams{
-    width: 100%;
-    height: 50%;
-    background-color: #b7e4c7;
+    width: 96%;
+    height: 48%;
+    background-color: #e1e5f2;
+    border-radius: 0.8em;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 1.2em 1.2em;
+    margin-left: 0.6em;
+    margin-top: 0.25em;
 }
 
 .states{
-    width: 100%;
-    height: 50%;
-    background-color: #eddcd2;
+    width: 96%;
+    height: 48%;
+    border-radius: 0.8em;
+    background-color: #ccdbfd;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    flex-direction: column;
+    padding: 1.2em 1.2em;
+    margin-left: 0.6em;
+    margin-top: 0.5em;
 }
 
 .featured-course{
+    border-radius: 0.8em;
     background-color: #edede9;
-    width: 32em;
-    height: 100%;
+    width: 30em;
+    height: 97%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 1.2em 1.2em;
+    margin-right: 0.6em;
+}
+
+.entrance-exam{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    overflow: overlay;
+}
+
+.Exam-name , .State-name , .Course-name{
+    color:#03045e;
+    display: inline-block;
 }
 
 /* --------------Category section------------------- */

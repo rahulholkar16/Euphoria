@@ -14,243 +14,325 @@
 </head>
 
 <body>
-    <div class="top-header">
-        <div class="social-media">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook" id="facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-square-x-twitter" id="twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram" id="instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin" id="linkdin"></i></a></li>
-            </ul>
-        </div>
-        <div class="digital-clock">
-            <div class="time">
-                <span class="hours">00</span>
-                <span class="dots">:</span>
-                <span class="minutes">00</span>
-                <span class="dots">:</span>
-                <div class="right-side">
-                    <span class="seconds">00</span>
-                    <!-- <span class="period">AM/PM</span> -->
+    <div class="main-container">
+        <div class="top-header">
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook" id="facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter" id="twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" id="instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin" id="linkdin"></i></a></li>
+                </ul>
+            </div>
+            <div class="digital-clock">
+                <div class="time">
+                    <span class="hours">00</span>
+                    <span class="dots">:</span>
+                    <span class="minutes">00</span>
+                    <span class="dots">:</span>
+                    <div class="right-side">
+                        <span class="seconds">00</span>
+                        <!-- <span class="period">AM/PM</span> -->
+                    </div>
                 </div>
             </div>
         </div>
+        <header>
+            <img class="logo" src="/image/name-logo1.png" alt="logo">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#">College</a></li>
+                    <li><a href="#">Exams</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">Latest Updates</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon">
+                <div class="my-profile">
+                    <a href="#"><i class="fa-solid fa-circle-user"></i>
+                        <p id="icon-text">Profile</p>
+                    </a>
+                </div>
+                <div class="search-icon active_box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <span class="search-box">
+                    <input class="search-input" placeholder="Search here">
+                    <i class="fa-solid fa-xmark" id="closs"></i>
+                </span>
+            </div>
+        </header>
+
+        <!-- container section-->
+        <div class="container">
+            <div class="college-card-silder">
+                <img src="/image/sliderImage/1.jpg" class="slide" alt="slider_image">
+                <img src="/image/sliderImage/2.jpg" class="slide" alt="slider_image">
+                <img src="/image/sliderImage/3.jpg" class="slide" alt="slider_image">
+                <img src="/image/sliderImage/4.jpg" class="slide" alt="slider_image">
+                <img src="/image/sliderImage/5.jpg" class="slide" alt="slider_image">
+                <i class="fa-solid fa-chevron-left" id="slide-Prev-btn" onclick="goPrev()"></i>
+                <i class="fa-solid fa-chevron-right" id="slide-Next-btn" onclick="goNext()"></i>
+            </div>
+            <div class="slider-text">
+                <p>Analyze your dream college</p>
+            </div>
+            <div class="college-card">
+                <span class="body-content">
+                    <h5>Body-Content</h5>
+                </span>
+                <span class="recommendation">
+                    <h5>Carrier-recommendations</h5>
+                </span>
+            </div>
+            <div class="college-card-main">
+                <div class="feature-head">
+                    <h1>Find the perfect college for you</h1>
+                    <p>Discover the top college exams and opportunities in your preferred field</p>
+                    <div class="option">
+                        <div>Engineering</div>
+                        <div>Management</div>
+                        <div>Commerce And Banking</div>
+                        <div>Medical</div>
+                        <div>Science</div>
+                        <div>Hotel Management</div>
+                        <div>I.T</div>
+                        <div>Arts And Humanities</div>
+                        <div>Law</div>
+                        <div>More</div>
+                    </div>
+                </div>
+                <div class="feature-container">
+                    <div class="featured-college">
+                        <div class="heading">
+                            <div class="Head-text">
+                                <p id="heading">Freatured College</p>
+                            </div>
+                            <div class="viewAll-section">
+                                <a href="#" id="heading-view">View all</a>
+                            </div>
+                        </div>
+                        <div class="college-names">
+                            <div class="college"><a href="#">Parul University</a></div>
+                            <div class="college"><a href="#">Chandigarh University</a></div>
+                            <div class="college float"><a href="#">Sanskriti University</a></div>
+                            <div class="college"><a href="#">CGC Jhanjeri</a></div>
+                            <div class="college"><a href="#">K. R. Managalam University</a></div>
+                            <div class="college"><a href="#">Lovely Professional University</a></div>
+                            <div class="college"><a href="#">Swarnim Startup and Inovation University</a></div>
+                            <div class="college"><a href="#">Jaipur National University</a></div>
+                            <div class="college"><a href="#">NIMS University</a></div>
+                            <div class="college"><a href="#">Amity University Pubjab</a></div>
+                            <div class="college"><a href="#">Institute of Engineering and  Management</a></div>
+                            <div class="college float"><a href="#">ITS Engineering College</a></div>
+                            <div class="college"><a href="#">CGC Landran</a></div>
+                            <div class="college"><a href="#">Lingaya's Vidyapeeth</a></div>
+                            <div class="college"><a href="#">Vivekananda Global University</a></div>
+                        </div>
+                    </div>
+                    <div class="state-exams">
+                        <div class="exams">
+                            <div class="heading">
+                                <div class="Head-text">
+                                    <p id="heading">Important Exams</p>
+                                </div>
+                                <div class="viewAll-section">
+                                    <a href="#" id="heading-view">View all</a>
+                                </div>
+                            </div>
+                            <div class="entrance-exam">
+                                <div class="Exam-name"><a href="#">JEE Main</a></div>
+                                <div class="Exam-name"><a href="#">JEE Advanced</a></div>
+                                <div class="Exam-name"><a href="#">WBJEE</a></div>
+                                <div class="Exam-name"><a href="#">TS EAMCET</a></div>
+                                <div class="Exam-name"><a href="#">VITEEE</a></div>
+                            </div>
+                        </div>
+                        <div class="states">
+                            <div class="heading">
+                                <div class="Head-text">
+                                    <p id="heading">Top States</p>
+                                </div>
+                                <div class="viewAll-section">
+                                    <a href="#" id="heading-view">View all</a>
+                                </div>
+                            </div>
+                            <div class="entrance-exam">
+                                <div class="State-name"><a href="#">Uttar Pradesh</a></div>
+                                <div class="State-name"><a href="#">Tamil Nadu</a></div>
+                                <div class="State-name"><a href="#">Maharashtra</a></div>
+                                <div class="State-name"><a href="#">Karnataka</a></div>
+                                <div class="State-name"><a href="#">Rajasthan</a></div>
+                                <div class="State-name"><a href="#">Punjab</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-course">
+                        <div class="heading">
+                            <div class="Head-text">
+                                <p id="heading">Related Courses</p>
+                            </div>
+                            <div class="viewAll-section">
+                                <a href="#" id="heading-view">View all</a>
+                            </div>
+                        </div>
+                        <div class="entrance-exam">
+                            <div class="Course-name"><a href="#">B Tech</a></div>
+                            <div class="Course-name"><a href="#">M Tech</a></div>
+                            <div class="Course-name"><a href="#">Bachelor of Engineering</a></div>
+                            <div class="Course-name"><a href="#">Civil Engineering</a></div>
+                            <div class="Course-name"><a href="#">Mechanical Engineering</a></div>
+                            <div class="Course-name"><a href="#">Automobile Engineering</a></div>
+                            <div class="Course-name"><a href="#">Aerospace Engineering</a></div>
+                            <div class="Course-name"><a href="#">Aeronautical Engineering</a></div>
+                            <div class="Course-name"><a href="#">Software Engineering</a></div>
+                            <div class="Course-name"><a href="#">Computer Engineering</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="college-card">
+                <i class="fa-solid fa-circle-arrow-left" id="arrow-left"></i>
+                <div class="radio-inputs">
+                    <label class="radio">
+                        <input type="radio" name="radio" checked="">
+                        <span class="name">MEDIA</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="name">ARTICLE</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="name">NEWS</span>
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="name">BOARDS</span>
+                    </label>
+                </div>
+                <i class="fa-solid fa-circle-arrow-right" id="arrow-right"></i>
+            </div>
+            <div class="college-card">
+                <div class="section-title">
+                    <h4>POSTS</h4>
+                </div>
+                <div class="post-card">
+                    <div class="card">
+                        <div class="card-details">
+                            <p class="text-title">Card title</p>
+                            <p class="text-body">Here are the details of the card</p>
+                        </div>
+                        <button class="card-button">More info</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-details">
+                            <p class="text-title">Card title</p>
+                            <p class="text-body">Here are the details of the card</p>
+                        </div>
+                        <button class="card-button">More info</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-details">
+                            <p class="text-title">Card title</p>
+                            <p class="text-body">Here are the details of the card</p>
+                        </div>
+                        <button class="card-button">More info</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-details">
+                            <p class="text-title">Card title</p>
+                            <p class="text-body">Here are the details of the card</p>
+                        </div>
+                        <button class="card-button">More info</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-details">
+                            <p class="text-title">Card title</p>
+                            <p class="text-body">Here are the details of the card</p>
+                        </div>
+                        <button class="card-button">More info</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-details">
+                            <p class="text-title">Card title</p>
+                            <p class="text-body">Here are the details of the card</p>
+                        </div>
+                        <button class="card-button">More info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer-section -->
+        <footer>
+            <div class="foot-panel">
+                <div class="foot-content">
+                    <p>Personalised Guidance</p>
+                    <p>Trusted Experts.</p>
+                    <p>Get in touch with our expert counsellors</p>
+                </div>
+            </div>
+            <div class="foot-panel1">
+                <div class="user-input-detail">
+                    <div class="group-1">
+                        <i class="fa-solid fa-user-large"></i>
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                    <div class="group-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" class="input" placeholder="Mobile Number">
+                    </div>
+                    <div class="group-3">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" class="input" placeholder="Email">
+                    </div>
+                    <div class="group">
+                        <i class="fa-brands fa-steam-symbol"></i>
+                        <input type="text" class="input" placeholder="Your Stream">
+                    </div>
+                </div>
+                <div class="request-btn">
+                    <button>REQUEST FOR A CALL</button>
+                </div>
+                <div class="sub-text">
+                    <p>By proceeding ahead you expressly agree to the Euphoria terms of use and privacy policy.</p>
+                </div>
+            </div>
+
+            <div class="foot-panel2">
+                <div class="logo-footer"></div>
+                <div class="foot-other">
+                    <div class="language border1 country">
+                        <i class="fa-solid fa-globe"></i>
+                        English
+                    </div>
+                    <div class="currency left border1 country">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        INR - Indian Rupee
+                    </div>
+                    <div class="country left border1">
+                        <div class="country-image"></div>
+                        <p class="language">India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-panel3">
+                <div class="pages">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#" class="left">Privacy Notice</a>
+                    <a href="#" class="left">Your Ads Privacy Choices</a>
+                </div>
+                <div class="copyright">
+                    © 2024, Euphoria , All rights are reserved.
+                </div>
+            </div>
+        </footer>
     </div>
-    <header>
-        <img class="logo" src="/image/name-logo1.png" alt="logo">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">College</a></li>
-                <li><a href="#">Exams</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Carrier</a></li>
-                <li><a href="#">Latest Updates</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
-        </nav>
-        <div class="nav-icon">
-            <div class="my-profile">
-                <a href="#"><i class="fa-solid fa-circle-user"></i>
-                    <p id="icon-text">Profile</p>
-                </a>
-            </div>
-            <div class="search-icon active_box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <span class="search-box">
-                <input class="search-input" placeholder="Search here">
-                <i class="fa-solid fa-xmark" id="closs"></i>
-            </span>
-        </div>
-    </header>
-
-    <!-- container section-->
-    <div class="container">
-        <div class="college-card-silder">
-            <img src="/image/sliderImage/1.jpg" class="slide" alt="slider_image">
-            <img src="/image/sliderImage/2.jpg" class="slide" alt="slider_image">
-            <img src="/image/sliderImage/3.jpg" class="slide" alt="slider_image">
-            <img src="/image/sliderImage/4.jpg" class="slide" alt="slider_image">
-            <img src="/image/sliderImage/5.jpg" class="slide" alt="slider_image">
-            <i class="fa-solid fa-chevron-left" id="slide-Prev-btn" onclick="goPrev()"></i>
-            <i class="fa-solid fa-chevron-right" id="slide-Next-btn" onclick="goNext()"></i>
-        </div>
-        <div class="slider-text">
-            <p>Analyze your dream college</p>
-        </div>
-        <div class="college-card">
-            <span class="body-content">
-                <h5>Body-Content</h5>
-            </span>
-            <span class="recommendation">
-                <h5>Carrier-recommendations</h5>
-            </span>
-        </div>
-        <div class="college-card-main">
-            <div class="feature-head">
-                <h1>Find the perfect college for you</h1>
-                <p>Discover the top college exams and opportunities in your preferred field</p>
-                <div class="option">
-                    <div>Engineering</div>
-                    <div>Management</div>
-                    <div>Commerce And Banking</div>
-                    <div>Medical</div>
-                    <div>Science</div>
-                    <div>Hotel Management</div>
-                    <div>I.T</div>
-                    <div>Arts And Humanities</div>
-                    <div>Law</div>
-                    <div>More</div>
-                </div>
-            </div>
-            <div class="feature-container">
-                <div class="featured-college">featured-college</div>
-                <div class="state-exams">
-                    <div class="exams">Exams</div>
-                    <div class="states">States</div>
-                </div>
-                <div class="featured-course">featured-course</div>
-            </div>
-        </div>
-        <div class="college-card">
-            <i class="fa-solid fa-circle-arrow-left" id="arrow-left"></i>
-            <div class="radio-inputs">
-                <label class="radio">
-                    <input type="radio" name="radio" checked="">
-                    <span class="name">MEDIA</span>
-                </label>
-                <label class="radio">
-                    <input type="radio" name="radio">
-                    <span class="name">ARTICLE</span>
-                </label>
-                <label class="radio">
-                    <input type="radio" name="radio">
-                    <span class="name">NEWS</span>
-                </label>
-
-                <label class="radio">
-                    <input type="radio" name="radio">
-                    <span class="name">BOARDS</span>
-                </label>
-            </div>
-            <i class="fa-solid fa-circle-arrow-right" id="arrow-right"></i>
-        </div>
-        <div class="college-card">
-            <div class="section-title">
-                <h4>POSTS</h4>
-            </div>
-            <div class="post-card">
-                <div class="card">
-                    <div class="card-details">
-                        <p class="text-title">Card title</p>
-                        <p class="text-body">Here are the details of the card</p>
-                    </div>
-                    <button class="card-button">More info</button>
-                </div>
-                <div class="card">
-                    <div class="card-details">
-                        <p class="text-title">Card title</p>
-                        <p class="text-body">Here are the details of the card</p>
-                    </div>
-                    <button class="card-button">More info</button>
-                </div>
-                <div class="card">
-                    <div class="card-details">
-                        <p class="text-title">Card title</p>
-                        <p class="text-body">Here are the details of the card</p>
-                    </div>
-                    <button class="card-button">More info</button>
-                </div>
-                <div class="card">
-                    <div class="card-details">
-                        <p class="text-title">Card title</p>
-                        <p class="text-body">Here are the details of the card</p>
-                    </div>
-                    <button class="card-button">More info</button>
-                </div>
-                <div class="card">
-                    <div class="card-details">
-                        <p class="text-title">Card title</p>
-                        <p class="text-body">Here are the details of the card</p>
-                    </div>
-                    <button class="card-button">More info</button>
-                </div>
-                <div class="card">
-                    <div class="card-details">
-                        <p class="text-title">Card title</p>
-                        <p class="text-body">Here are the details of the card</p>
-                    </div>
-                    <button class="card-button">More info</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- footer-section -->
-    <footer>
-        <div class="foot-panel">
-            <div class="foot-content">
-                <p>Personalised Guidance</p>
-                <p>Trusted Experts.</p>
-                <p>Get in touch with our expert counsellors</p>
-            </div>
-        </div>
-        <div class="foot-panel1">
-            <div class="user-input-detail">
-                <div class="group-1">
-                    <i class="fa-solid fa-user-large"></i>
-                    <input type="text" class="input" placeholder="Name">
-                </div>
-                <div class="group-2">
-                    <i class="fa-solid fa-phone"></i>
-                    <input type="tel" class="input" placeholder="Mobile Number">
-                </div>
-                <div class="group-3">
-                    <i class="fa-regular fa-envelope"></i>
-                    <input type="email" class="input" placeholder="Email">
-                </div>
-                <div class="group">
-                    <i class="fa-brands fa-steam-symbol"></i>
-                    <input type="text" class="input" placeholder="Your Stream">
-                </div>
-            </div>
-            <div class="request-btn">
-                <button>REQUEST FOR A CALL</button>
-            </div>
-            <div class="sub-text">
-                <p>By proceeding ahead you expressly agree to the Euphoria terms of use and privacy policy.</p>
-            </div>
-        </div>
-
-        <div class="foot-panel2">
-            <div class="logo-footer"></div>
-            <div class="foot-other">
-                <div class="language border1 country">
-                    <i class="fa-solid fa-globe"></i>
-                    English
-                </div>
-                <div class="currency left border1 country">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>
-                    INR - Indian Rupee
-                </div>
-                <div class="country left border1">
-                    <div class="country-image"></div>
-                    <p class="language">India</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="foot-panel3">
-            <div class="pages">
-                <a href="#">Conditions of Use</a>
-                <a href="#" class="left">Privacy Notice</a>
-                <a href="#" class="left">Your Ads Privacy Choices</a>
-            </div>
-            <div class="copyright">
-                © 2024, Euphoria , All rights are reserved.
-            </div>
-        </div>
-    </footer>
     <script src="college.js"></script>
 </body>
 
