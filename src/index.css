@@ -8,9 +8,6 @@
     box-sizing: border-box;
 }
 
-.container {  
-    width: 100%;  
-    max-width: 1200px;  
-    margin: 0 auto;  
-    padding: 20px
+body{
+    background-color: #111111;
 }
