@@ -91,7 +91,7 @@
     -webkit-background-clip: text;
 }
 
-/* Nav section */
+/* --------------------Nav section----------------- */
 
 .top-header {
     display: flex;
@@ -104,6 +104,8 @@ header {
     padding: 10px 10%;
     background-color: #2176ff;
     color: #edf0f1;
+    width: 100%;
+    height: 5em;
 }
 
 li,
@@ -250,6 +252,9 @@ a {
     background-color: white;
 }
 
+.menuNav{
+    visibility: hidden;
+}
 
 /* ----------------Container-section -----------------*/
 
@@ -349,7 +354,7 @@ a {
     background-color: #d0f4de;
     color: #000;
     position: absolute;
-    bottom: 24%;
+    bottom: 36%;
     text-align: center;
     margin-left: 5%;
     display: flex;
